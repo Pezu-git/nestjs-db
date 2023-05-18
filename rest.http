@@ -1,0 +1,35 @@
+GET http://localhost:3000/books
+
+###
+
+GET http://localhost:3000/books/6465f4a2a67ca29e6a515655
+
+
+###
+
+POST http://localhost:3000/books/
+content-type: application/json
+
+{
+    "title": "Bible",
+    "author": "God",
+    "description": "Oh, my God",
+    "page_count": 5000
+}
+
+###
+
+PUT http://localhost:3000/books/6465f4a2a67ca29e6a515655
+content-type: application/json
+
+{
+    "title": "Bible",
+    "author": "God",
+    "description": "Oh, my God!!!!!",
+    "page_count": 50000
+}
+
+
+###
+
+DELETE http://localhost:3000/books/6465f4a2a67ca29e6a515655
